@@ -11,20 +11,37 @@ It's called docker Desktop.
 Once you ahve it installed you can use the makefile at the root in order to use it.
 
 ## Targets in makefile:
-# make
+
+```
+make
+```
 builds the image with the current code
 
-# make run
+```
+make run
+```
 runs the built image (you have to make sure you run make so it has the board)
     
-# make stop
+```
+make stop
+```
 stop the currently running server
     
-# make clean
+```
+make clean
+```
 deletes the image built by make
 
 You can also run it locally on your machine without docker using your computers go install by using the makefile in src. Basically
-run make to build the binary and make clean to delete it
+run 
+```
+make 
+```
+to build the binary and 
 
+```
+make clean
+```
+to delete it
 
 ### HAPPY COOMING
