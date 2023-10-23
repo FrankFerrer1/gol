@@ -1,21 +1,19 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
+    "github.com/gofiber/fiber/v2"
 )
 
 func main() {
     inject := initializeAll()
 
-	r := gin.Default()
-	r.GET("/ping", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{
-			"message": "ping",
-		})
-        println(*inject.TestString)
-	})
+    app := fiber.New()
 
-	r.Run()
+    app.Get("/", func(c *fiber.Ctx) error {
+        inject.Database.Stats()
+        return c.SendString("Hello World!")
+    })
+
+
+    app.Listen(":9000")
 }
