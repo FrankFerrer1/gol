@@ -45,5 +45,3 @@ make clean
 to delete it
 
 ### HAPPY COOMING
-
-teststring for build trigger ignore...
