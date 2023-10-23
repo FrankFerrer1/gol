@@ -26,8 +26,8 @@ func provideDatabaseConnection() *bun.DB {
     dsn := "postgres://" + 
         POSTGRES_USER + ":" + 
         POSTGRES_PASSWORD + "@" + 
-        IBAKU_POSTGRES_HOST + ":" + 
-        IBAKU_POSTGRES_PORT + "/" + 
+        POSTGRES_HOST + ":" + 
+        POSTGRES_PORT + "/" + 
         POSTGRES_DATABASE_NAME + "?sslmode=disable"
 
     sqldb := sql.OpenDB(pgdriver.NewConnector(pgdriver.WithDSN(dsn)))
