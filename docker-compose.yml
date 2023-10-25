@@ -18,6 +18,9 @@ services:
       - PGADMIN_LISTEN_PORT=5050
     ports:
       - "5050:5050"
-
+  ng-server:
+    build: .
+    ports:
+      - "9000:9000"
 volumes:
   data:
