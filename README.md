@@ -44,6 +44,19 @@ make clean
 ```
 to delete it
 
-### HAPPY COOMING
+# setting up
+in the CLI run:
+docker-compose up --build
+will build everything and run the script(s)
 
-test
+# pg-admin
+
+When setting up the pgadmin connection, set the following in Connection when registering a server
+
+host name/address: 172.26.0.1 (should be the default IP that docker gives)
+port: 5432
+Maintenance database: assets
+Username: postgres
+password: postgres
+
+### HAPPY COOMING
