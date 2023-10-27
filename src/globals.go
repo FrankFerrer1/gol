@@ -1,9 +1,9 @@
 package main
 
 // TODO: INSERT PROPER HOSTNAME, IDEALLY ONE PUBLICALLY EXPOSED
-const POSTGRES_HOST = "localhost"
+const POSTGRES_HOST = "postgres"
 const POSTGRES_PORT = "5432"
 
 const POSTGRES_USER = "postgres"
 const POSTGRES_PASSWORD = "postgres"
-const POSTGRES_DATABASE_NAME = "ngp-dev"
+const POSTGRES_DATABASE_NAME = "assets"
